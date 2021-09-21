@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+
+header{
+    margin: 0;
+    width: 100%;
+}
+body{
+    background-image: url(./bg/to-do-list.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

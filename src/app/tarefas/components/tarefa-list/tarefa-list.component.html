@@ -1,0 +1,47 @@
+<div class="card">
+    
+    <div class="table-responsive">
+        <table class="table mb-0">
+            <thead>
+                <tr >
+                    <td>
+                     
+                       <div class="mb-3" >
+                            <h3>Digite a tarefa</h3>
+                            <input type="email" class="form-control inputTarefa" id="exampleFormControlInput1" [(ngModel)]="formTarefa"/>
+                          <button style="margin-bottom: 4px; margin-left: 5px;"    type="submit" class="btn btn-primary lg" (click)="criarTarefa()" (click)="showSuccess()"  [disabled]='!formTarefa'>Adicionar </button>  
+                          <p-toast></p-toast>
+                       </div>
+                    </td>
+                </tr>            
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Tarefas a fazer!</th>
+                    
+                </tr> 
+                
+                <tr *ngFor= " let item of tarefas">
+                
+                  <div class="container tarefaGravada">
+                    <div class="card">
+                        <div class="card-body">
+                         <h5>{{item}}</h5>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="btn"> 
+                     <button type="button"  style="height: 64px;"    class="btn btn-danger" (click)='removerTarefa(item)'>Deletar</button>
+                 </div>
+                    
+                </tr>
+            </tbody>
+
+        </table>
+  </div>
+
+
+</div>

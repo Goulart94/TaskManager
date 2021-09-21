@@ -1,0 +1,30 @@
+.card{
+    margin-top: 40px;
+}
+.tarefaGravada{
+   
+    width: 1000px;
+    margin: 10px 5px 10px 0;
+    display: inline-block;
+}
+.inputTarefa{
+    width: 800px;
+    margin: 10px 5px 10px 60px;
+    display: inline-block;
+   
+}
+
+/*class common*/
+.btn{
+    display: inline-block;
+   
+    
+}
+
+.check{
+    display: inline-block;
+    color: green;
+    margin-left: 70px;
+
+
+}
